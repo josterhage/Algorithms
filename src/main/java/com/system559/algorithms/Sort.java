@@ -33,14 +33,33 @@ public class Sort {
             result.add(pivot);
             result.addAll(quickSort(partitionedList.subList(1, partitionedList.size())));
         } else if (pivotIndex == objects.size() - 1) {
-            result.addAll(quickSort(partitionedList.subList(0, partitionedList.size()-1)));
+            result.addAll(quickSort(partitionedList.subList(0, partitionedList.size() - 1)));
             result.add(pivot);
         } else {
-            result.addAll(quickSort(partitionedList.subList(0,pivotIndex)));
+            result.addAll(quickSort(partitionedList.subList(0, pivotIndex)));
             result.add(pivot);
-            result.addAll(quickSort(partitionedList.subList(pivotIndex+1, partitionedList.size())));
+            result.addAll(quickSort(partitionedList.subList(pivotIndex + 1, partitionedList.size())));
         }
 
         return result;
+    }
+
+    public static <T extends Comparable<T>> List<T> bubbleSort(List<T> objects) {
+        int lowestSortedMember = objects.size() - 1;
+
+        while (lowestSortedMember > 1) {
+            for (int i = 0; i < lowestSortedMember; i++) {
+                int comparison = objects.get(i).compareTo(objects.get(i + 1));
+                if (comparison <= 0) {
+                    continue;
+                }
+                T lowObject = objects.get(i + 1);
+                objects.set(i + 1, objects.get(i));
+                objects.set(i, lowObject);
+            }
+            lowestSortedMember--;
+        }
+
+        return objects;
     }
 }
