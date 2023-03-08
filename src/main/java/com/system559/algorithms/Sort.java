@@ -3,6 +3,7 @@ package com.system559.algorithms;
 import java.lang.Comparable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Sort {
     public static <T extends Comparable<T>> List<T> quickSort(List<T> objects) {
@@ -61,5 +62,29 @@ public class Sort {
         }
 
         return objects;
+    }
+
+    public static <T extends Comparable<T>> List<T> insertionSort(List<T> objects) {
+        List<T> sortedList = new ArrayList<>();
+
+        for (T nextObject : objects) {
+            if (sortedList.isEmpty()) {
+                sortedList.add(nextObject);
+                continue;
+            }
+
+            for (int j = 0; j <= sortedList.size(); j++) {
+                if (j == sortedList.size()) {
+                    sortedList.add(nextObject);
+                    break;
+                }
+                if (sortedList.get(j).compareTo(nextObject) > 0) {
+                    sortedList.add(j, nextObject);
+                    break;
+                }
+            }
+        }
+
+        return sortedList;
     }
 }

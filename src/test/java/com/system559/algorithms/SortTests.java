@@ -33,4 +33,14 @@ public class SortTests {
     public void bubbleSortShortCharacterArray() {
         assertEquals(sortedCharacters, Sort.bubbleSort(unsortedCharacters));
     }
+
+    @Test
+    public void insertionSortShortIntegerArray() {
+        assertEquals(sortedIntegers,Sort.insertionSort(unsortedIntegers));
+    }
+
+    @Test
+    public void insertionSortShortCharacterArray() {
+        assertEquals(sortedCharacters, Sort.insertionSort(unsortedCharacters));
+    }
 }
