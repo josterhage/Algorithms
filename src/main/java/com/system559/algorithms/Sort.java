@@ -4,8 +4,6 @@ import java.lang.Comparable;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.String.format;
-
 public class Sort {
     public static <T extends Comparable<T>> List<T> quickSort(List<T> objects) {
         if (objects.size() < 2) {
@@ -44,16 +42,5 @@ public class Sort {
         }
 
         return result;
-    }
-
-    private static <T> void printList(List<T> listToPrint) {
-        final StringBuilder string = new StringBuilder();
-        string.append('[');
-        listToPrint.forEach((item) -> {
-            string.append(format("%d, ", item));
-        });
-        string.delete(string.length() - 2, string.length() - 1);
-        string.append(']');
-        System.out.println(format("%s\n", string));
     }
 }
