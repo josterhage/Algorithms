@@ -7,6 +7,10 @@ import java.util.Objects;
 
 public class Sort {
     public static <T extends Comparable<T>> List<T> quickSort(List<T> objects) {
+        if(Objects.isNull(objects)) {
+            throw new NullPointerException("Cannot sort an empty list");
+        }
+
         if (objects.size() < 2) {
             return objects;
         }
@@ -46,6 +50,14 @@ public class Sort {
     }
 
     public static <T extends Comparable<T>> List<T> bubbleSort(List<T> objects) {
+        if(Objects.isNull(objects)) {
+            throw new NullPointerException("Cannot sort an empty list");
+        }
+
+        if(objects.size() == 1) {
+            return objects;
+        }
+
         int lowestSortedMember = objects.size() - 1;
 
         while (lowestSortedMember > 1) {
@@ -65,6 +77,14 @@ public class Sort {
     }
 
     public static <T extends Comparable<T>> List<T> insertionSort(List<T> objects) {
+        if(Objects.isNull(objects)) {
+            throw new NullPointerException("Cannot sort an empty list");
+        }
+
+        if(objects.size() == 1) {
+            return objects;
+        }
+
         List<T> sortedList = new ArrayList<>();
 
         for (T nextObject : objects) {

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff834a56-f37f-4d02-8b31-75572d5c90ca" name="Changes" comment="passing implementation of bubblesort">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ff834a56-f37f-4d02-8b31-75572d5c90ca" name="Changes" comment="passing implementation of insertsort">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/system559/algorithms/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system559/algorithms/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/system559/algorithms/SortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/system559/algorithms/SortTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678167056279</updated>
-      <workItem from="1678167057559" duration="11543000" />
+      <workItem from="1678167057559" duration="11605000" />
     </task>
     <task id="LOCAL-00001" summary="passing implementation of quicksort">
       <created>1678236040171</created>
@@ -129,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678247183124</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="passing implementation of insertsort">
+      <created>1678249019612</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678249019612</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +155,8 @@
     <MESSAGE value="passing implementation of quicksort" />
     <MESSAGE value="removed unnecessary code" />
     <MESSAGE value="passing implementation of bubblesort" />
-    <option name="LAST_COMMIT_MESSAGE" value="passing implementation of bubblesort" />
+    <MESSAGE value="passing implementation of insertsort" />
+    <option name="LAST_COMMIT_MESSAGE" value="passing implementation of insertsort" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Algorithms$SortTests_quickSortSortsShortIntegerArray.ic" NAME="SortTests.quickSortSortsShortIntegerArray Coverage Results" MODIFIED="1678233478594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
