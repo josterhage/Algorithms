@@ -56,7 +56,7 @@ public class Sort {
             throw new NullPointerException(NULL_LIST_MESSAGE);
         }
 
-        if(objects.size() == 1) {
+        if(objects.size() < 2) {
             return objects;
         }
 
@@ -83,7 +83,7 @@ public class Sort {
             throw new NullPointerException(NULL_LIST_MESSAGE);
         }
 
-        if(objects.size() == 1) {
+        if(objects.size() < 2) {
             return objects;
         }
 
