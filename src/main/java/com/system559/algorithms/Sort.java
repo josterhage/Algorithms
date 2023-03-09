@@ -6,9 +6,11 @@ import java.util.List;
 import java.util.Objects;
 
 public class Sort {
+    private final static String NULL_LIST_MESSAGE = "Cannot sort an uninitialized List";
+
     public static <T extends Comparable<T>> List<T> quickSort(List<T> objects) {
         if(Objects.isNull(objects)) {
-            throw new NullPointerException("Cannot sort an empty list");
+            throw new NullPointerException(NULL_LIST_MESSAGE);
         }
 
         if (objects.size() < 2) {
@@ -51,7 +53,7 @@ public class Sort {
 
     public static <T extends Comparable<T>> List<T> bubbleSort(List<T> objects) {
         if(Objects.isNull(objects)) {
-            throw new NullPointerException("Cannot sort an empty list");
+            throw new NullPointerException(NULL_LIST_MESSAGE);
         }
 
         if(objects.size() == 1) {
@@ -78,7 +80,7 @@ public class Sort {
 
     public static <T extends Comparable<T>> List<T> insertionSort(List<T> objects) {
         if(Objects.isNull(objects)) {
-            throw new NullPointerException("Cannot sort an empty list");
+            throw new NullPointerException(NULL_LIST_MESSAGE);
         }
 
         if(objects.size() == 1) {

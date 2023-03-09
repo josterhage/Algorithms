@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff834a56-f37f-4d02-8b31-75572d5c90ca" name="Changes" comment="passing implementation of insertsort">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/system559/algorithms/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/system559/algorithms/Sort.java" afterDir="false" />
-    </list>
+    <list default="true" id="ff834a56-f37f-4d02-8b31-75572d5c90ca" name="Changes" comment="added null and length checks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678167056279</updated>
-      <workItem from="1678167057559" duration="11605000" />
+      <workItem from="1678167057559" duration="12222000" />
     </task>
     <task id="LOCAL-00001" summary="passing implementation of quicksort">
       <created>1678236040171</created>
@@ -134,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678249019612</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added null and length checks">
+      <created>1678249091535</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678249091535</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +161,8 @@
     <MESSAGE value="removed unnecessary code" />
     <MESSAGE value="passing implementation of bubblesort" />
     <MESSAGE value="passing implementation of insertsort" />
-    <option name="LAST_COMMIT_MESSAGE" value="passing implementation of insertsort" />
+    <MESSAGE value="added null and length checks" />
+    <option name="LAST_COMMIT_MESSAGE" value="added null and length checks" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Algorithms$SortTests_quickSortSortsShortIntegerArray.ic" NAME="SortTests.quickSortSortsShortIntegerArray Coverage Results" MODIFIED="1678233478594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
